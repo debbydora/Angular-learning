@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <form [formGroup]="loginForm" (ngSubmit)="save()">
+            <h3>Login</h3>
+            <p>Please enter your Email and Password </p>
+            <div class="email">
+              <input type="email" formControlName="Email" placeholder="Email">
+            </div>
+            <div class="password">
+              <input type="password" formControlName="Password" placeholder="Password">
+            </div>
+            <button type="submit">Submit</button>
+            <div>
+              <p>Don't have an account?</p>
+              <a routerLink="/auth/register">Register here</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(220, 243, 220);
+}
+
+.card {
+    padding: 15px;
+    border: none;
+    width: 30%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(41, 110, 112);
+    background: linear-gradient(90deg, rgb(41, 110, 112) 0%, rgb(66, 92, 92) 100%);
+}
+
+.card h3, p{
+    color: white;
+}
+
+.card a {
+    color:bisque;
+}
+
+.card div input{
+    border-radius: 5px;
+    border-style: none;
+    margin: 10px 0;
+    width: 90%;
+}
+
+ input:active{
+     border-style: none;
+ }
+
+
+button {
+    border-style: none;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+ 

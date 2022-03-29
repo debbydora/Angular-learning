@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <form [formGroup]="signupForm" (ngSubmit)="save()">
+            <h3>Register Here</h3>
+            <p>Please enter your details</p>
+            <div>
+              <input type="text" formControlName="FirstName" placeholder="First Name" required>
+            </div>
+            <div>
+              <input type="text" formControlName="LastName" placeholder="Last Name" required>
+            </div>
+            <div>
+              <input type="text" formControlName="PhoneNumber" placeholder="PhoneNumber" required>
+            </div>
+            <div>
+              <input type="email" formControlName="Email" placeholder="Email" required>
+            </div>
+            <div>
+              <input type="password" formControlName="Password" placeholder="Password" required>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
